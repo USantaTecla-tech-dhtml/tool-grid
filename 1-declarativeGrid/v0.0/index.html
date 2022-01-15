@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declarative Grid</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./logic.js"></script>
+</head>
+
+<body onload="render();">
+    <header>
+        <h1>Declarative Grid</h1>
+    </header>
+    <main>
+        <form id="form">
+            <input id="button" type="button" value="Dibujar" onclick="render();">
+            <input id="button" type="button" value="+" onclick="increment();">
+            <input id="button" type="button" value="-" onclick="decrement();">
+            <span id="error" class="inactiveError">Error!!!</span><br />
+            <input id="expression" type="text" value="expression"/>
+        </form>
+        <div id="grid">
+        </div>
+        <div id="language">
+            <h2>Language</h2>
+            <ul>
+                <li>
+                    <h3>Expressión</h3>
+                    <img src="grammar/Condition.png"></img>
+                </li>
+                <li>
+                    <h3>Sentence</h3>
+                    <img src="grammar/Expression.png"></img>
+                </li>
+                <li>
+                    <h3>Simple Sentence</h3>
+                    <img src="grammar/Integer.png"></img>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>

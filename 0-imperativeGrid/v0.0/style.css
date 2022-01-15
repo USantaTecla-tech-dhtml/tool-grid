@@ -1,0 +1,39 @@
+#form {
+  float : left;
+  width : 330px; 
+}
+
+.activeError {
+  color : red;
+}
+
+.inactiveError {
+  color : white;
+}
+
+#grid {
+  border: 1px solid black;
+  float : left;
+  width : 497px;
+  height : 497px;
+}
+
+#language {
+  float : left;
+}
+
+td {
+  border : 1px black solid;
+  width : 1px;
+  height : 1px;
+}
+
+.black {
+  background-color: black;
+}
+
+#plantuml {
+  border: 1px solid black;
+  float : left;
+  width : 400px;
+}
