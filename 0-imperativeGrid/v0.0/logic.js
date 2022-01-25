@@ -157,11 +157,11 @@ function render() {
   }
 
   function generatePlantuml(sequentialSentence) {
-    let translation = "\nstart";
+    let translation = "@startuml\n\nstart";
       for(let sentence of sequentialSentence){
         translation += sentence.toPlantuml();
       }
-      translation += "\nstop";
+      translation += "\nstop\n\n@enduml";
     console.log(translation);
     let aux = document.createElement("textarea");
     aux.innerHTML = translation
@@ -178,14 +178,4 @@ function hideError(){
 
 function showError(){
   document.getElementById("error").setAttribute("class", "activeError");
-}
-
-function increment() {
-  dim++;
-  render();
-}
-
-function decrement() {
-  dim--;
-  render();
 }

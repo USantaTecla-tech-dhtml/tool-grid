@@ -92,13 +92,3 @@ function hideError(){
 function showError(){
   document.getElementById("error").setAttribute("class", "activeError");
 }
-
-function increment() {
-  dim++;
-  render();
-}
-
-function decrement() {
-  dim--;
-  render();
-}
